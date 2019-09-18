@@ -1,0 +1,348 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 8px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+}
+
+#imageTintin
+{
+    
+   display:block; 
+   max-width: 100%;
+   height:auto;
+   padding: 10% ;
+   margin : 0 auto;
+}
+
+#imageAccueil
+{
+   width:500px;
+   height:700px;
+
+}
+#div
+{
+   float:left;
+   margin-left:6%;
+   margin-right:2%;
+   margin-top:7%; 
+   background-color: #555555;
+   text-align:center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #div {
+    margin-left:25%;
+    margin-right:25%;
+  }
+}
+
+
+
+.changePage
+{
+  display:inline-block;
+  outline : none;
+  border:none;
+ border-radius: 50px;
+ padding:10px;
+ width:200px;
+ background-color:#00bc8c;
+ color:#fff;
+ border : 2px solid #00bc8c;
+ cursor: pointer;
+ margin-top:2%;
+
+
+}
+.changePage[id="next"]
+{
+  float:right; 
+  outline : none;
+ 
+}
+.changePage[id="previous"]
+{
+float: left;
+  outline : none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  height:145px;
+
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 12%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+  text-decoration: none;
+  height:145px;
+  margin-left:4%;
+}
+
+
+.icon-bar a:hover {
+  background-color: #fff; /* Add a hover color */
+  
+}
+
+
+
+
+
+.roro
+{
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.roro:focus
+{
+  width: 500px;
+}
+
+.fofo
+{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+
+}
+
+.fofo:hover
+{
+  background: #2ecc71;
+}
+
+
+
+
+.blockAccueil
+{
+  float:left; 
+  text-align:center;
+  background-color:#636363;
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  margin-top:3%;
+}
+
+.blockAccueil[id="Lecture"]
+{
+  float:left;
+  margin-left:10%;
+
+  
+}
+
+
+
+.blockAccueil[id="Jeux"]
+{
+  float:right;
+  margin-right:10%;
+
+}
+
+
+.bv
+{
+  background-color: #636363;
+  width:700px;
+padding:50px;
+
+  border-radius:10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .blockAccueil
+{
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+.blockAccueil[id="Lecture"]
+{
+  float:left;
+  margin-left:10%;
+}
+
+.blockAccueil[id="Jeux"]
+{
+  float:right;
+  margin-right:10%;
+}
+}
+
+
+@media only screen and (min-width: 1700px) {
+  .blockAccueil
+{
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+.blockAccueil[id="Lecture"]
+{
+  float:left;
+  margin-left:10%;
+}
+
+.blockAccueil[id="Jeux"]
+{
+  float:right;
+  margin-right:10%;
+}
+}
+
+.Debut {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background-color: rgba(0,0,0,0.99); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.Fin {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background-color: rgba(0,0,0,0.99); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+   /* Add a pointer on hover */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+.blockQuizz
+{
+  margin-left:10%;
+  margin-top:2%;
+  margin-right:2%;
+  text-align:center;
+  display:inline-block;
+  background-color: #636363;
+  height:auto;
+  width:700px;
+  border-radius:40px;
+  padding:20px;
+}
+
+#essai
+{
+  margin-top:50px;
+}
+
+
+
+.option
+{
+
+  background: #636363;
+
+}
+
+.blockBDD
+{
+  float:left;
+  margin-left:6%;
+  margin-right:2%;
+  margin-top:7%; 
+  height:auto;
+  width:500px;
+  background-color: #555555;
+}
+
+.page
+{
+  background-color: #555555;
+  padding: 20px;
+  border-radius:50px;
+}
